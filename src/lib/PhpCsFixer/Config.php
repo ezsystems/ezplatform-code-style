@@ -167,12 +167,6 @@ EOF;
             'blank_line_after_opening_tag' => false,
             'single_blank_line_before_namespace' => false,
             'space_after_semicolon' => false,
-            'header_comment' => [
-                'commentType' => 'PHPDoc',
-                'header' => static::EZPLATFORM_PHP_HEADER,
-                'location' => 'after_open',
-                'separate' => 'top',
-            ],
             'yoda_style' => false,
             'no_break_comment' => false,
             'native_function_invocation' => false,
