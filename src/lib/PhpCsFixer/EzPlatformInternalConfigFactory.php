@@ -8,7 +8,6 @@ declare(strict_types=1);
 
 namespace EzSystems\EzPlatformCodeStyle\PhpCsFixer;
 
-use PhpCsFixer\Config;
 use PhpCsFixer\ConfigInterface;
 
 /**
