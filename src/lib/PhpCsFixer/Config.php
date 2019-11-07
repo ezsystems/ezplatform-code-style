@@ -164,6 +164,7 @@ class Config extends ConfigBase
             'native_function_invocation' => false,
             'phpdoc_types_order' => [
                 'null_adjustment' => 'always_last',
+                'sort_algorithm' => 'none',
             ],
             'php_unit_mock_short_will_return' => false,
             'yoda_style' => false,
