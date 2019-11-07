@@ -12,11 +12,6 @@ use PhpCsFixer\Config as ConfigBase;
 
 class Config extends ConfigBase
 {
-    public const EZPLATFORM_PHP_HEADER = <<<'EOF'
-@copyright Copyright (C) eZ Systems AS. All rights reserved.
-@license For full copyright and license information view LICENSE file distributed with this source code.
-EOF;
-
     public function __construct($name = 'default')
     {
         parent::__construct($name);
