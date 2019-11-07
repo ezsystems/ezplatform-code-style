@@ -110,10 +110,6 @@ EOF;
             'phpdoc_summary' => true,
             'phpdoc_trim' => true,
             'phpdoc_types' => true,
-            'phpdoc_types_order' => [
-                'null_adjustment' => 'always_last',
-                'sort_algorithm' => 'none',
-            ],
             'phpdoc_var_without_name' => true,
             'protected_to_private' => true,
             'return_type_declaration' => true,
@@ -154,9 +150,7 @@ EOF;
             'no_homoglyph_names' => true,
             'non_printable_character' => true,
             'php_unit_construct' => true,
-            'php_unit_mock_short_will_return' => true,
             'psr4' => true,
-            'self_accessor' => true,
             'set_type_to_cast' => true,
             'concat_space' => ['spacing' => 'one'],
             'array_syntax' => ['syntax' => 'short'],
@@ -167,9 +161,14 @@ EOF;
             'blank_line_after_opening_tag' => false,
             'single_blank_line_before_namespace' => false,
             'space_after_semicolon' => false,
+            'native_function_invocation' => false,
+            'phpdoc_types_order' => [
+                'null_adjustment' => 'always_last',
+            ],
+            'php_unit_mock_short_will_return' => false,
             'yoda_style' => false,
             'no_break_comment' => false,
-            'native_function_invocation' => false,
+            'self_accessor' => false,
         ]);
     }
 }
