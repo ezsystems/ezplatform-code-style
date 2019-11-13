@@ -12,6 +12,9 @@
     "require": {
         "friendsofphp/php-cs-fixer": "^2.16"
     },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
     "autoload": {
         "psr-4": {
             "EzSystems\\EzPlatformCodeStyle\\": "src/lib/"
