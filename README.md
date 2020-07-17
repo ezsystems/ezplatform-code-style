@@ -6,7 +6,7 @@ to contributions, etc.
 
 ## FAQ
 
-See [doc/FAQ.md] for common questions related to contributing to eZ Platform-related packages.
+See [FAQ](doc/FAQ.md) for common questions about contributing to eZ Platform-related packages.
 
 ## COPYRIGHT
 
