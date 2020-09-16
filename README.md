@@ -6,12 +6,17 @@ to contributions, etc.
 
 ## PhpStorm inspections
 
-See the [IDE/PhpStorm/PhpStormInspections.xml](./IDE/PhpStorm/PhpStormInspections.xml) for
-the PhpStorm code inspections settings profile. The profile can be imported by choosing:
+See the [PhpStormInspections.xml](./IDE/PhpStorm/PhpStormInspections.xml) file for
+the PhpStorm code inspections settings profile. 
+To import the profile, click:
 
 ```
-File -> Settings -> Editor -> Inspections > Import profile
+File -> Settings -> Editor -> Inspections -> Import profile
 ```
+
+
+For more information, see the [PhpStorm documentation](https://www.jetbrains.com/help/phpstorm/customizing-profiles.html#47e75).
+
 
 ## COPYRIGHT
 
