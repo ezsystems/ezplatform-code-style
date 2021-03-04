@@ -8,16 +8,4 @@ declare(strict_types=1);
 
 use Ibexa\Platform\CodeStyle\PhpCsFixer\Config;
 
-@trigger_error(
-    sprintf(
-        '"%s" class is deprecated. Use "%s" instead.',
-        'EzSystems\EzPlatformCodeStyle\PhpCsFixer\Config',
-        Config::class
-    ),
-    E_USER_DEPRECATED
-);
-
-/**
- * @deprecated Use \Ibexa\Platform\CodeStyle\PhpCsFixer\Config instead.
- */
-class_alias(Config::class, 'EzSystems\EzPlatformCodeStyle\PhpCsFixer\Config');
+class_exists(Config::class);

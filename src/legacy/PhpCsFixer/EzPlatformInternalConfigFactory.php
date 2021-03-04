@@ -8,16 +8,4 @@ declare(strict_types=1);
 
 use Ibexa\Platform\CodeStyle\PhpCsFixer\IbexaInternalConfigFactory;
 
-@trigger_error(
-    sprintf(
-        '"%s" class is deprecated. Use "%s" instead.',
-        'EzSystems\EzPlatformCodeStyle\PhpCsFixer\EzPlatformInternalConfigFactory',
-        IbexaInternalConfigFactory::class
-    ),
-    E_USER_DEPRECATED
-);
-
-/**
- * @deprecated Use \Ibexa\Platform\CodeStyle\PhpCsFixer\IbexaInternalConfigFactory instead.
- */
-class_alias(IbexaInternalConfigFactory::class, 'EzSystems\EzPlatformCodeStyle\PhpCsFixer\EzPlatformInternalConfigFactory');
+class_exists(IbexaInternalConfigFactory::class);
