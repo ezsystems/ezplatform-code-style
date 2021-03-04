@@ -17,6 +17,7 @@ use Ibexa\Platform\CodeStyle\PhpCsFixer\Config;
     E_USER_DEPRECATED
 );
 
+/**
+ * @deprecated Use \Ibexa\Platform\CodeStyle\PhpCsFixer\Config instead.
+ */
 class_alias(Config::class, 'EzSystems\EzPlatformCodeStyle\PhpCsFixer\Config');
-
-class_exists(Config::class);
