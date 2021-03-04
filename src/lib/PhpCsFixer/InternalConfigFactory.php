@@ -16,7 +16,7 @@ use PhpCsFixer\ConfigInterface;
  *
  * @internal
  */
-final class IbexaInternalConfigFactory
+final class InternalConfigFactory
 {
     /** @deprecated Use IBEXA_PHP_HEADER constant instead. */
     public const EZPLATFORM_PHP_HEADER = self::IBEXA_PHP_HEADER;
@@ -71,4 +71,4 @@ EOF;
 /**
  * @deprecated Use \Ibexa\Platform\CodeStyle\PhpCsFixer\IbexaInternalConfigFactory instead.
  */
-class_alias(IbexaInternalConfigFactory::class, 'EzSystems\EzPlatformCodeStyle\PhpCsFixer\EzPlatformInternalConfigFactory');
+class_alias(InternalConfigFactory::class, 'EzSystems\EzPlatformCodeStyle\PhpCsFixer\EzPlatformInternalConfigFactory');
