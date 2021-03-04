@@ -59,3 +59,8 @@ EOF;
         return $self->buildConfig();
     }
 }
+
+/**
+ * @deprecated Use \Ibexa\Platform\CodeStyle\PhpCsFixer\IbexaInternalConfigFactory instead.
+ */
+class_alias(IbexaInternalConfigFactory::class, 'EzSystems\EzPlatformCodeStyle\PhpCsFixer\EzPlatformInternalConfigFactory');
