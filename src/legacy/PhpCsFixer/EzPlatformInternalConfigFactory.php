@@ -6,6 +6,6 @@
  */
 declare(strict_types=1);
 
-use Ibexa\Platform\CodeStyle\PhpCsFixer\IbexaInternalConfigFactory;
+use Ibexa\Platform\CodeStyle\PhpCsFixer\InternalConfigFactory;
 
-class_exists(IbexaInternalConfigFactory::class);
+class_exists(InternalConfigFactory::class);
