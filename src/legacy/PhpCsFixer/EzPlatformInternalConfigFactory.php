@@ -17,6 +17,7 @@ use Ibexa\Platform\CodeStyle\PhpCsFixer\IbexaInternalConfigFactory;
     E_USER_DEPRECATED
 );
 
+/**
+ * @deprecated Use \Ibexa\Platform\CodeStyle\PhpCsFixer\IbexaInternalConfigFactory instead.
+ */
 class_alias(IbexaInternalConfigFactory::class, 'EzSystems\EzPlatformCodeStyle\PhpCsFixer\EzPlatformInternalConfigFactory');
-
-class_exists(IbexaInternalConfigFactory::class);
