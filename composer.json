@@ -19,7 +19,8 @@
     },
     "autoload": {
         "psr-4": {
-            "EzSystems\\EzPlatformCodeStyle\\": "src/lib/"
+            "EzSystems\\EzPlatformCodeStyle\\": "src/legacy/",
+            "Ibexa\\Platform\\CodeStyle\\": "src/lib/"
         }
     },
     "scripts": {

@@ -6,7 +6,7 @@
  */
 declare(strict_types=1);
 
-namespace EzSystems\EzPlatformCodeStyle\PhpCsFixer;
+namespace Ibexa\Platform\CodeStyle\PhpCsFixer;
 
 use PhpCsFixer\Config as ConfigBase;
 
