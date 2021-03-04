@@ -6,7 +6,7 @@
  */
 declare(strict_types=1);
 
-namespace EzSystems\EzPlatformCodeStyle\PhpCsFixer;
+namespace Ibexa\Platform\CodeStyle\PhpCsFixer;
 
 use PhpCsFixer\ConfigInterface;
 
@@ -15,27 +15,47 @@ use PhpCsFixer\ConfigInterface;
  *
  * @internal
  */
-class EzPlatformInternalConfigFactory
+final class IbexaInternalConfigFactory
 {
-    public const EZPLATFORM_PHP_HEADER = <<<'EOF'
+    public const IBEXA_PHP_HEADER = <<<'EOF'
 @copyright Copyright (C) Ibexa AS. All rights reserved.
 @license For full copyright and license information view LICENSE file distributed with this source code.
 EOF;
 
-    public static function build(): ConfigInterface
+    private $customRules = [];
+
+    public function withRules(array $rules): self
+    {
+        $this->customRules = $rules;
+
+        return $this;
+    }
+
+    public function buildConfig(): ConfigInterface
     {
         $config = new Config();
 
         $specificRules = [
             'header_comment' => [
                 'commentType' => 'PHPDoc',
-                'header' => static::EZPLATFORM_PHP_HEADER,
+                'header' => static::IBEXA_PHP_HEADER,
                 'location' => 'after_open',
                 'separate' => 'top',
             ],
         ];
-        $config->setRules(array_merge($config->getRules(), $specificRules));
+        $config->setRules(array_merge(
+            $config->getRules(),
+            $specificRules,
+            $this->customRules
+        ));
 
         return $config;
+    }
+
+    public static function build(): ConfigInterface
+    {
+        $self = new self();
+
+        return $self->buildConfig();
     }
 }
