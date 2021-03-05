@@ -1,4 +1,4 @@
-# eZ Platform Code Style
+# Ibexa Code Style
 
 This package contains eZ Platform Coding Standards which are aimed to include plugins  
 for code style tools, plugins for CI, IDE settings, Git hooks, GitHub templates related  
