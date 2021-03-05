@@ -2,7 +2,7 @@
     "name": "ezsystems/ezplatform-code-style",
     "description": "eZ Platform Code Style knowledge base",
     "type": "internal",
-    "license": "GPL-2.0-only",
+    "license": "(GPL-2.0-only or proprietary)",
     "authors": [
         {
             "name": "eZ Engineering",
