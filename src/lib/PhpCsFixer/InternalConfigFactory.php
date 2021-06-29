@@ -44,7 +44,7 @@ EOF;
 
         $specificRules = [
             'header_comment' => [
-                'commentType' => 'PHPDoc',
+                'comment_type' => 'PHPDoc',
                 'header' => static::IBEXA_PHP_HEADER,
                 'location' => 'after_open',
                 'separate' => 'top',
