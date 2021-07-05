@@ -6,7 +6,7 @@
  */
 declare(strict_types=1);
 
-use Ibexa\Platform\CodeStyle\PhpCsFixer\InternalConfigFactory;
+use Ibexa\CodeStyle\PhpCsFixer\InternalConfigFactory;
 
 $finder = PhpCsFixer\Finder::create()
     ->in(__DIR__)

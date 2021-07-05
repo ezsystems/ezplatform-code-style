@@ -15,7 +15,8 @@
         "adamwojs/php-cs-fixer-phpdoc-force-fqcn": "^1.1"
     },
     "require-dev": {
-        "roave/security-advisories": "dev-master"
+        "roave/security-advisories": "dev-master",
+        "phpstan/phpstan": "^0.12.91"
     },
     "autoload": {
         "psr-4": {
@@ -24,7 +25,9 @@
         }
     },
     "scripts": {
-        "fix-cs": "php-cs-fixer fix -v --show-progress=dots"
+        "check-cs": "php-cs-fixer fix -v --diff --dry-run --show-progress=dots",
+        "fix-cs": "php-cs-fixer fix -v --show-progress=dots",
+        "phpstan": "phpstan analyse -c phpstan.neon"
     },
     "extra": {
         "branch-alias": {

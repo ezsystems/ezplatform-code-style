@@ -26,8 +26,12 @@ final class InternalConfigFactory
 @license For full copyright and license information view LICENSE file distributed with this source code.
 EOF;
 
+    /** @var array<string, mixed> */
     private $customRules = [];
 
+    /**
+     * @param array<string, mixed> $rules
+     */
     public function withRules(array $rules): self
     {
         $this->customRules = $rules;

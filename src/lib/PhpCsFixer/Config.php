@@ -12,6 +12,9 @@ use PhpCsFixer\Config as ConfigBase;
 
 class Config extends ConfigBase
 {
+    /**
+     * @param string $name
+     */
     public function __construct($name = 'default')
     {
         parent::__construct($name);
