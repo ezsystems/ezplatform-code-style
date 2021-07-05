@@ -20,7 +20,7 @@
     "autoload": {
         "psr-4": {
             "EzSystems\\EzPlatformCodeStyle\\": "src/bc/",
-            "Ibexa\\Platform\\CodeStyle\\": "src/lib/"
+            "Ibexa\\CodeStyle\\": "src/lib/"
         }
     },
     "scripts": {

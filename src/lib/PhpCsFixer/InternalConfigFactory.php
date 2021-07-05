@@ -6,7 +6,7 @@
  */
 declare(strict_types=1);
 
-namespace Ibexa\Platform\CodeStyle\PhpCsFixer;
+namespace Ibexa\CodeStyle\PhpCsFixer;
 
 use AdamWojs\PhpCsFixerPhpdocForceFQCN\Fixer\Phpdoc\ForceFQCNFixer;
 use PhpCsFixer\ConfigInterface;
