@@ -6,6 +6,6 @@
  */
 declare(strict_types=1);
 
-use Ibexa\Platform\CodeStyle\PhpCsFixer\Config;
+use Ibexa\CodeStyle\PhpCsFixer\Config;
 
 class_exists(Config::class);
