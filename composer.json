@@ -12,7 +12,7 @@
     "require": {
         "php": ">=7.1",
         "friendsofphp/php-cs-fixer": "^3.0",
-        "adamwojs/php-cs-fixer-phpdoc-force-fqcn": "^1.1"
+        "adamwojs/php-cs-fixer-phpdoc-force-fqcn": "^1.2"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
