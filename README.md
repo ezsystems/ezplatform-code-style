@@ -19,7 +19,7 @@ $factory = new Ibexa\CodeStyle\PhpCsFixer\InternalConfigFactory();
 $factory->withRules([
     // Your rules go here
 ]);
-$config = Ibexa\CodeStyle\PhpCsFixer\InternalConfigFactory::buildConfig();
+$config = $factory->buildConfig();
 $config->setFinder(
     PhpCsFixer\Finder::create()
         ->in(__DIR__ . '/src')
